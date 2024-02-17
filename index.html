@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Jeremiah</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Jeremiah Ziskovsky</title>
+        <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./media/groupSession.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jeremiah Ziskovsky's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority
+                        <br> to arrange a stage or field of battle
+                        <br> and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> I am Jeremiah. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./media/workstation.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer, who loves the logic puzzles of coding.  I enjoy riding motorcycles, making excellent coffee, and spending time with my loved ones. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Front-end Web Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, and more. 
+                    <br>
+                    <br>I am a budding software engineer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--more About section-->
+        <div class="Row" id="moreAbout">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>Violet Light</h1>
+                <p>
+                    When away from the computer, I am an absolute nerd about herbal tea.  I have even started my own line of blends, which you can check out here: 
+                    <br>
+                    <p class="center"><a href="https://violethealinglight.square.site/menu" target="_blank">Violet Light Apothecary</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://violethealinglight.square.site/product/meditative-mind/18" target="_blank"><img src="./media/MeditativeMindFront.jpg" alt="Meditative Mind tea blend label"></a>
+            </div>
+            
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_2">
+                <a href="https://github.com/alcyonray" target="_blank"><img src="./media/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my computer programming projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/alcyonray" target="_blank">My Personal Github</a></p>
+                </p>
+            </div>
+            
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_2 Column_tall">
+                <img src="./media/mailbox.jpg" alt="Contact_Image">
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Site created by: <a href="https://www.linkedin.com/in/jeremiah-ziskovsky-0838851b6/" target="_blank">Jeremiah Ziskovsky</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
 </html>
